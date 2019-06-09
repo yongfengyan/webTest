@@ -22,7 +22,7 @@
           System.out.println("加载数据库驱动错误");
           e.printStackTrace();
       }
-      Connection conn = DriverManager.getConnection("jdbc:mysql://mysql.c12s2.cn/test?useUnicode=true&characterEncoding=UTF-8&useSSL=false","root","#!TB3#IRnW8!gq#r");
+      Connection conn = DriverManager.getConnection("");
       String sql = "select * from test where id = ? ";
       PreparedStatement pstmt = conn.prepareStatement(sql);
       pstmt.setInt(1,Integer.parseInt(id));
